@@ -1,0 +1,8 @@
+pro do_plots_ex
+setcolors
+rdfloat,'out.txt',id,m_deb,P_M_deb,y_obs,P_y_obs,y_pred,P_y_pred,p_y_interp,integrand
+
+
+
+stop
+end

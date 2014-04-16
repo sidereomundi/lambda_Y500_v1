@@ -1,0 +1,10 @@
+#!/bin/bash 
+bfile=tmp.pro
+echo .r "call_likelihood_library.pro" >> $bfile
+echo debugt, lambda_par=[140,40,0,0.5] >> $bfile
+echo exit >> $bfile
+idl << EOF > out.txt
+@$bfile
+EOF
+rm $bfile
+cat out.txt
